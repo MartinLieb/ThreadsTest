@@ -48,9 +48,8 @@ public class Main {
         public void run() {
             for (int i = 0; i < GENTAGELSER; i++) {
                 if (i % LINELENGHT == 0) {
-                    System.out.println("\n");
                 }
-                System.out.print(bogstav);
+                System.out.print((Thread.currentThread().getId()) + "" + bogstav + "\n");
             }
         }
     }
