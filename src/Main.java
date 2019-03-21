@@ -17,6 +17,7 @@ public class Main {
             int random = getRandomNumberInRange(0,abc.length()-1);
             Opgave opgave = new Opgave(abc.charAt(random));
             Thread thread = new Thread(opgave);
+            thread.setPriority(getRandomNumberInRange(1,10));
 
             thread.start();
 
